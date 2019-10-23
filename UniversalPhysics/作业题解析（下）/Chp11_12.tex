@@ -21,6 +21,8 @@
 \usepackage[version=4]{mhchem}%写化学式
 \newcommand{\RNum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}%罗马数字
 \newenvironment{mymathfrac}[2]{\left.\raise0.5ex\hbox{$#1$}\! \big\left/ \! \lower0.5ex\hbox{$#2$}\right.}%长斜分数线环境
+%还需要长的\bar
+
 
 \begin{document}
 \setcounter{chapter}{11}
@@ -279,7 +281,11 @@ K为常量，T相同。
 \solve
 
 $$
-\begin{aligned} \sqrt {\bar{v^{2}}} & = \sqrt { \frac { 3 k T } { u } } \\ u O _ { 2 } & > u H _ { 2 } \\ \sqrt {\bar{v^{2}}  \left(\ce{O2}\right) } & = \sqrt { \bar { v } ^ { 2 } \left( H _ { 2 } \right) } \\ T \left( O _ { 2 } \right) & > T \left( H _ { 2 } \right) \end{aligned}
+\begin{aligned} \sqrt {\bar{v^{2}}} &=\sqrt{\frac{3kT}{u}} \\
+u\left(\ce{H2}\right)& > u\left(\ce{H2}\right) \\
+\sqrt {\bar{v^{2}}\left(\ce{O2}\right)}& = \sqrt {\bar{v^{2}}\left(\ce{H2}\right) }\\
+T\left(\ce{O2}\right)&>T\left(\ce{H2}\right) 
+\end{aligned}
 $$
 
 \exercise{5}B
@@ -290,28 +296,36 @@ $$
 
 \solve
 
-$$
-\begin{array} { c } { \varepsilon _ { H e } = \varepsilon _ { N _ { 2 } } } \\ { n _ { H e } = n _ { N _ { 2 } } \quad n = \frac { N } { V } } \\ { \bar { \varepsilon } = \frac { 3 } { 2 } k T } \\ { T _ { H e } = T _ { N _ { 2 } } } \\ { p = \frac { 2 } { 3 } n \bar { \varepsilon } } \\ { p _ { H e } = p _ { N _ { 2 } } } \end{array}
-$$
+\begin{gather*}
+\varepsilon_{\ce{He}}=\varepsilon_{\ce{N2}}\\
+n_{\ce{He}}=n_{\ce{N2}}\quad n=\frac{N}{V}\\
+\bar{\varepsilon}=\frac{3}{2}kT\\
+T_{\ce{He}}=T_{\ce{N2}}\\
+p=\frac{2}{3}n\bar{\varepsilon}\\
+p_{\ce{He}}=p_{\ce{N2}}
+\end{gather*}
 
 \exercise{7}A
 
 \solve
 
 $$
-\begin{aligned} p V & = \nu R T \\ p V & = \frac { m } { M } R T \\ p V & = \rho R T \\ \rho & = \frac { p M } { R T } \end{aligned}
+\begin{aligned} 
+p V & = \nu R T \\ p V & = \frac { m } { M } R T \\
+p V & = \rho R T \\
+\rho & = \frac { p M } { R T }
+\end{aligned}
 $$
 
 由于水滴静止，则
-
 $$
-p _ { H _ { 2 } } = p _ { O _ { 2 } }
+p_{\ce{H2}} =p_{\ce{O2}}
 $$
 
 又因为T相同，则
 
 $$
-\frac { p _ { H _ { 2 } } } { p _ { O _ { 2 } } } = \frac { \frac { p M _ { H _ { 2 } } } { R T } } { \frac { p M _ { o _ { 2 } } } { R T } } = \frac { 1 } { 16 }
+\frac { p _ {\ce{H2}} } { p _ {\ce{O2}} } = \frac { \frac { p M _ {\ce{H2}} } { R T } } { \frac { p M_{\ce{O2}}}{ R T}}=\frac{1}{16}
 $$
 
 \exercise{8}D
@@ -557,21 +571,23 @@ $$
 \begin{array} { c } { \rho = \frac { m } { V } = \frac { \nu m _ { 0 } } { V } = 11.3 g / c m ^ { 3 } } \\ { p V = \nu R T } \\ { \therefore \frac { \nu } { V } = \frac { p } { R T } = \frac { 1.01 \times 10 ^ { 3 } } { 8.314 \times 300 } = 0.405 } \\ { m _ { 0 } = \rho \frac { V } { \nu } = \frac { 11.3 } { 0.405 } = 27.9012 \approx 28 } \end{array}
 $$
 
-则可能是$N_2,CO,CH_2=CH_2$
+则可能是\ce{N2},\ce{CO},\ce{CH2=CH2}
 
 (2)
 
 $$
-\sqrt { \bar { v } ^ { 2 } } = \sqrt { \frac { 3 k T } { \mu } } = 1.73 \sqrt { \frac { R T } { M } } = 1.73 \times \sqrt { \frac { 8.314 \times 300 } { 28 \times 10 ^ { - 3 } } } = 516.8 \mathrm { m } / \mathrm { s }
+\sqrt{\bar{v^{2}}}=\sqrt {\frac{3kT}{\mu}}=1.73\sqrt {\frac{RT}{M}}=1.73\times\sqrt{\frac{8.314\times 300}{28\times10^{-3}}}=516.8\mathrm{m}/\mathrm{s}
 $$
 
 (3)
 
-$$
-\begin{array} { c }\bar{\varepsilon}_{\mbox{平}}=\frac{3}{2}kT \\
- = \frac { 3 } { 2 } \times 1.38 \times 10^{- 23 } \times 300 = 6.21 \times 10 ^ { - 21 } \\
- {\bar{\varepsilon }_ { \mbox{转}} = k T = 4.14 \times 10 ^ { - 21 } } \end{array}
-$$
+\begin{align*}
+\bar{\varepsilon_{\mbox{平}}}&=\frac{3}{2}kT\\
+&=\frac{3}{2}\times 1.38\times 10^{-23}\times 300\\
+&=6.21\times 10^{-21}\\
+\bar{\varepsilon_{\mbox{转}}}&=kT\\
+&=4.14\times 10^{-21}
+\end{align*}
 
 (4)单位体积总平动动能=1个分子平均平动动能*分子数密度
 
