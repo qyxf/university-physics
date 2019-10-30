@@ -52,8 +52,9 @@
 \usetikzlibrary{calc,backgrounds}
 \RequirePackage{tcolorbox,tabu}
 \tcbuselibrary{listings,theorems,skins}
-\newcommand{\exercise}[1]{\noindent\tcbox[on line,top=0mm,bottom=0mm,%
-right=0mm,left=0mm]{\bfseries 练习#1}\ }
+\newcounter{exercises}[chapter]
+\setcounter{exercises}{1} %初始化为1
+\newcommand{\exercise}{\stepcounter{exercises}\noindent\tcbox[on line,top=0mm,bottom=0mm,right=0mm,left=0mm]{\bfseries 练习 \arabic{exercises}}\ }
 \newcommand{\note}{\noindent\textbf{注记}\ }
 \newcommand{\solve}{\noindent\textbf{解}\hspace{1em}}
 \newcommand{\analysis}{\noindent\textbf{分析}\ }
