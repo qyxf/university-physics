@@ -8,25 +8,26 @@
 
 \solve
 \begin{gather*} 
-{Vp=\sqrt{\frac{2kT}{u}}}\\
+{v_p=\sqrt{\frac{2kT}{u}}}\\
 {u\left(\ce{O2}\right)}>u\left(\ce{H2}\right)\\
-{Vp\left(\ce{O2}\right)<Vp\left(\ce{H2}\right) } \\
-\frac{Vp\left(\ce{O2}\right)}{Vp\left(\ce{H2}\right)}=\sqrt{\frac{2kT}{32}} \sqrt{\frac{2kT}{2}}=\frac{1}{4}%需要长斜杠分数线
+{v_p\left(\ce{O2}\right)<v_p\left(\ce{H2}\right) } \\
+\frac{v_p\left(\ce{O2}\right)}{v_p\left(\ce{H2}\right)}=\sqrt{\frac{2kT}{32}}{\displaystyle\Huge/} \sqrt{\frac{2kT}{2}}=\frac{1}{4}%需要长斜杠分数线
 \end{gather*}
-K为常量，T相同。
+$k$为常量，$T$相同。
 
 \exercise C
 
-\solve 自由度为i的分子的平均动能为ikT/2。
+\solve 自由度为$i$的分子的平均动能为$ikT/2$。
 
 \exercise A
 
 \solve
 
 $$
-\begin{aligned} \sqrt {\bar{v^{2}}} &=\sqrt{\frac{3kT}{u}} \\
+\begin{aligned} 
+\sqrt {\overline{v^{2}}} &=\sqrt{\frac{3kT}{u}} \\
 u\left(\ce{H2}\right)& > u\left(\ce{H2}\right) \\
-\sqrt {\bar{v^{2}}\left(\ce{O2}\right)}& = \sqrt {\bar{v^{2}}\left(\ce{H2}\right) }\\
+\sqrt {\bar{v^2}\left(\ce{O2}\right)}& = \sqrt {\bar{v^2}\left(\ce{H2}\right) }\\
 T\left(\ce{O2}\right)&>T\left(\ce{H2}\right) 
 \end{aligned}
 $$
@@ -68,7 +69,7 @@ $$
 又因为T相同，则
 
 $$
-\frac { p _ {\ce{H2}} } { p _ {\ce{O2}} } = \frac { \frac { p M _ {\ce{H2}} } { R T } } { \frac { p M_{\ce{O2}}}{ R T}}=\frac{1}{16}
+\frac { p_{\ce{H2}} } { p _{\ce{O2}} } = \frac { \frac { p M _ {\ce{H2}} } { R T } } { \frac { p M_{\ce{O2}}}{ R T}}=\frac{1}{16}
 $$
 
 \exercise D
@@ -127,9 +128,9 @@ $$
 $$
 \section{填空题}
 \exercise 
-$\int _ { v _ { 2 } } ^ { v _ { 2 } } f ( v ) N d v$
+$\int _ { v _ { 2 } } ^ { v _ { 2 } } f ( v ) N\di{v}$
 \qquad
-$\frac { \int _ { v _ { 1 } } ^ { v _ { 2 } } v f ( v ) d v } { \int _ { v _ { 1 } } ^ { v _ { 2 } } f ( v )\di{v}}$
+$\frac { \int _ { v _ { 1 } } ^ { v _ { 2 } } v f ( v )\di{v}} { \int _ { v _ { 1 } } ^ { v _ { 2 } } f ( v )\di{v}}$
 \qquad
 $N \cdot \frac { 1 } { 2 } m \int _{v_1}^{v_ 2} v^2f( v )\di{v}$
 
@@ -137,14 +138,26 @@ $N \cdot \frac { 1 } { 2 } m \int _{v_1}^{v_ 2} v^2f( v )\di{v}$
 (1)
 
 $$
-\begin{aligned} \frac { d N } { N } & = f ( v ) d v \\ d N & = N f ( v ) d v \\ N ^ { \prime } = & \int _ { v_1 } ^ { v _ { 2 } } N f ( v ) d v \end{aligned}
+\begin{aligned}
+\frac { d N } { N } & = f ( v ) d v \\ d N & = N f ( v )\di{v}\\ N ^ { \prime } = & \int _ { v_1 } ^ { v _ { 2 } } N f ( v )\di{v}
+\end{aligned}
 $$
 
 (2)
-$$v_1 \sim v_2 \mbox{的平均速度}=\frac{\mbox{这个区间里每个分子速度之和}}{\mbox{这个区间里分子总数}}\\= \frac { \int _ { v _ { 1 } } ^ { v _ { 2 } } v d N } { \int _ { v _ { 1 } } ^ { v _ { 2 } } d N } = \frac { N \int _ { v _ { 1 } } ^ { v _ { 2 } } v f ( v ) d v } { N \int _ { v _ { 1 } } ^ { v _ { 2 } } f ( v ) d v } = \\frac { \int _ { v _ {1 } } ^ { v _ { 2 } } v f ( v ) d v } { \int _ { v _ { 1 } } ^ { v _ { 2 } } f ( v ) d v }$$
+$$
+\begin{aligned}
+v_1 \sim v_2 \mbox{的平均速度}&=\frac{\mbox{这个区间里每个分子速度之和}}{\mbox{这个区间里分子总数}}\\
+&=\frac { \int _ { v _ { 1 } } ^ { v _ { 2 } } v\di{N}} { \int _ { v _ { 1 } } ^ { v _ { 2 } }\di{N}} = \frac { N \int _ { v _ { 1 } } ^ { v _ { 2 } } v f ( v )\di{v}} { N \int _ { v _ { 1 } } ^ { v _ { 2 } } f ( v )\di{v}} \\
+&=frac { \int _ { v _ {1 } } ^ { v _ { 2 } } v f ( v )\di{v}} { \int _ { v _ { 1 } } ^ { v _ { 2 } } f ( v )\di{v}}
+\end{aligned}
+$$
 
 (3)
-$$\mbox{总平动动能之和=每个分子平动动能之和}= \int _ { v _ { 1 } } ^ { v _ { 2 } } \frac { 1 } { 2 } m v ^ { 2 } d N \\ =  \frac { 1 } { 2 } m N \int _ { v _ { 1 } } ^ { v _ { 2 } } v ^ { 2 } f ( v ) d v 
+$$
+\begin{aligned}
+\mbox{总平动动能之和=每个分子平动动能之和}&= \int _ { v _ { 1 } } ^ { v _ { 2 } } \frac { 1 } { 2 } m v ^ { 2 }\di{N}\\
+&=\frac{1}{2}m N \int _ { v _ { 1 } } ^ { v _ { 2 } } v ^ { 2 } f ( v )\di{v}
+\end{aligned}
 $$
 
 
@@ -155,16 +168,13 @@ $$
 
 
 \exercise
-$
-n _ { 0 } e ^ { - \frac { m g z } { k T } }
-\qquad
-z = - \frac { k T \ln ^ { \frac { p } { p_0 } } } { m g }
-$
+$n _ { 0 } e ^ { - \frac { m g z } { k T } } \qquad z = - \frac { k T \ln ^ { \frac { p } { p_0 } } } { m g }$
 
 \solve 由玻尔兹曼分布律：
 
 $$
-\begin{aligned} n & = n _ { 0 } e ^ { - \frac { m g z } { k T } } \\ p & = p _ { 0 } e ^ { - \frac { m g z } { k T } } \\ z & = - \frac { k T \ln ^ { \frac { p } { p _ { 0 } } } } { m g } \end{aligned}
+\begin{aligned}
+n & = n _ { 0 } e ^ { - \frac { m g z } { k T } } \\ p & = p _ { 0 } e ^ { - \frac { m g z } { k T } } \\ z & = - \frac { k T \ln ^ { \frac { p } { p _ { 0 } } } } { m g } \end{aligned}
 $$
 
 \exercise 升高\qquad 升高
@@ -274,9 +284,11 @@ m _ { 0 } = \frac { M } { N _ { A } } = 5.31 \times 10 ^ { - 23 } g
 $$
 
 (3)
-$$
-\rho = \frac { m } { V } = \frac { N m _ { 0 } } { V } = \frac { 2.415 \times 10 ^ { 16 } \times 5.31 \times 10 ^ { - 23 } } { 10 ^ { - 9 } } \times 10 ^ { - 3 } = 1.28236 \times 10 ^ { 27 } \mathrm { kg } / \mathrm { m } ^ { 3 }
-$$
+\begin{align*}
+\rho &= \frac { m } { V } = \frac { N m _ { 0 } } { V }\\
+&= \frac { 2.415 \times 10 ^ { 16 } \times 5.31 \times 10 ^ { - 23 } } { 10 ^ { - 9 } } \times 10 ^ { - 3 } \\
+&= 1.28236 \times 10 ^ { 27 } \mathrm { kg } / \mathrm {m^3}
+\end{align*}
 
 (4)
 $$
@@ -287,24 +299,26 @@ $$
 
 \solve
 (1)
-$$
-p = p _ { 0 } e ^ { - \frac { \mu g h } { k T } } = p _ { 0 } e ^ { - \frac { M g h } { R T } } = 0.633 p _ { 0 } = 6.45 \times 10 ^ { 4 } P a
-$$
+\begin{align*}
+p &= p _ { 0 } e ^ { - \frac { \mu g h } { k T } } = p _ { 0 } e ^ { - \frac { M g h } { R T } } \\
+&= 0.633 p _ { 0 } \\
+&= 6.45 \times 10 ^4\mathrm{Pa}
+\end{align*}
 (2)
+
 每口吸入的空气v不随海拔变化而变化。
 
-相同质量$\rightarrow v $相同。
+相同质量$\Rightarrow v $相同。
 
 $pV=nRT$
 
 忽略气温随高度变化时，T为定值。
 
-$$
-\begin{array}{l}
-\therefore p_{0}\cdot 17 v =0.633p_0 \cdot x v\\
-{ x = 26.7 \approx 27} 
-\end{array}
-$$
+$\therefore p_{0}\cdot 17 v =0.633p_0 \cdot x v$
+
+${ x = 26.7 \approx 27}$ 
+
+
 \exercise
 
 \solve
