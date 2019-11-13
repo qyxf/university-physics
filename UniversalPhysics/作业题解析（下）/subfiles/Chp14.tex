@@ -121,13 +121,13 @@
 \section{计算题}
 \exercise
 
-\solve (1)由于波向x正向传播，则在x处的质点，振动的相位比0.1m处的质点落后$\Delta \phi(x)=\frac{\omega}{u}(x-0.1)$。而在0.1m处的质点振动为$y_0=0.5sin(1.0-4.0t)=0.5(cos(4t-1+\frac{\pi}{2}))$。则可得圆频率$\omega=4rad/s$，则$\Delta \phi(x)=5(x-0.1)$。
+\solve (1)由于波向x正向传播，则在$x$处的质点，振动的相位比$0.1$m处的质点落后$\Delta \phi(x)=\frac{\omega}{u}(x-0.1)$。而在0.1m处的质点振动为$y_0=0.5sin(1.0-4.0t)=0.5cos(4t-1+\frac{\pi}{2})$。则可得圆频率$\omega=4\mathrm{rad/s}$，则$\Delta \phi(x)=5(x-0.1)$。
 
-由以上可得$y(x,t)=0.5cos(4t-1+0.5\pi+5(x-0.1))=0.5cos(4t-5x+0.07)\mathrm{m}$
+由以上可得$y(x,t)=0.5cos(4t-1+0.5\pi-5(x-0.1))=0.5cos(4t-5x+1.07)\mathrm{m}$
 
-(2)$v(0.1,t)=\frac{d y(0.1,t)}{d t}=-2sin(4t+0.57)\mathrm{m/s}$；
+(2)$v(0.1,t)=\dy{y(0.1,t)}{t}=-2sin(4t+0.57)\mathrm{m/s}$
 
-(3)$v_{max}=2\mathrm{m/s}$;则$\frac{v_{max}}{u}=5:2=2.5$。
+(3)$v_{max}=2\mathrm{m/s}$；则$\frac{v_{max}}{u}=5:2=2.5$。
 
 \exercise 
 
@@ -138,8 +138,7 @@
 	y'=y
 \end{cases}
 \]
-
-进行化简，得
+即
 \[
 \begin{cases}
 	x=\frac{\lambda}{4}-x'\\
@@ -153,7 +152,7 @@ $$y'=Acos(2\pi(\frac{t}{T}+\frac{x'}{\lambda})+\varphi-\frac{\pi}{2})$$
 
 \exercise
 
-\solve (1)$f=\frac{1}{T}=2Hz$，$u=\lambda f=1.6\mathrm{m/s}$；
+\solve (1)$f=\frac{1}{T}=2Hz$，$u=\lambda f=1.6\mathrm{m/s}$；（或$u=\frac{\lambda}{T}=1.6\mathrm{m/s}$）
 
 (2)$y(x,t)=0.2cos(2\pi(\frac{t}{0.5}-\frac{x}{0.8})+\varphi_0)\mathrm{m}$；
 
@@ -171,7 +170,7 @@ $$y'=Acos(2\pi(\frac{t}{T}+\frac{x'}{\lambda})+\varphi-\frac{\pi}{2})$$
 
 (2)反射波方向与入射波相反，但是振幅，频率和波速不变，故设反射波方程为$y_2=Acos(2\pi(\frac{t}{T}+\frac{x}{\lambda})+\frac{3\pi}{2}-\Delta \varphi)\mathrm{m}$。
 
-而反射波到达原点时，相位比入射波落后$\Delta \varphi =2 \frac{3}{4}\lambda\times \frac{2\pi}{\lambda}+\pi=4\pi$(其中最后加的$\pi$是半波损失的相位)。而$4\pi$是$2\pi$的整数倍，故不影响方程的形式。则有$y_2=Acos(2\pi(\frac{t}{T}+\frac{x}{\lambda})+\frac{3\pi}{2})\mathrm{m}$；
+而反射波到达原点时，相位比入射波落后$\Delta \varphi =2\times\frac{3}{4}\lambda\times \frac{2\pi}{\lambda}+\pi=4\pi$(其中最后加的$\pi$是半波损失的相位)。而$4\pi$是$2\pi$的整数倍，故不影响方程的形式。则有$y_2=Acos(2\pi(\frac{t}{T}+\frac{x}{\lambda})+\frac{3\pi}{2})\mathrm{m}$；
 
 (3)$y=y_1+y_2=2Acos(\frac{2\pi x}{\lambda})cos(\frac{2\pi t}{T}+\frac{3\pi}{2})\mathrm{m}$
 
