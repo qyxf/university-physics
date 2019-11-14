@@ -21,6 +21,11 @@
 \usepackage[version=4]{mhchem}%写化学式
 \newcommand{\RNum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}%罗马数字
 \newenvironment{mymathfrac}[2]{\left.\raise0.5ex\hbox{$#1$}\! \big\left/ \! \lower0.5ex\hbox{$#2$}\right.}%长斜分数线环境
+%公式按照题目标号，不知道为啥编译不了，只能手动添加到各章
+%\makeatletter
+%\@addtoreset{equation}{exercises}
+%\makeatother
+
 
 
 \begin{document}

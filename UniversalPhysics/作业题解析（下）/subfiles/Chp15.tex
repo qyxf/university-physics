@@ -1,4 +1,7 @@
 \chapter{波动光学1（干涉）}
+\makeatletter
+\@addtoreset{equation}{exercises}
+\makeatother
 \section{选择题}
 \exercise A
 
@@ -14,7 +17,7 @@
 
 \exercise C
 
-\solve 由于一个狭缝的宽度变窄，说明其中一束光的光强变弱，但是其振动的频率和相位没有发生变化，故两束光仍然是相干光，仍然会发生干涉现象。由双缝干涉间距公式（公式三），可知条纹的间距不变。由于此时两束光的最大光强不同，故原来光强为零的地方现在不再为零。
+\solve 由于一个狭缝的宽度变窄，说明其中一束光的光强变弱，但是其振动的频率和相位没有发生变化，故两束光仍然是相干光，仍然会发生干涉现象。由双缝干涉间距公式$\Delta=\frac{D\lambda}{d}$，可知条纹的间距不变。由于此时两束光的最大光强不同，故原来光强为零的地方现在不再为零。
 
 \exercise A
 
@@ -83,25 +86,70 @@
 \section{解答题}
 \exercise 
 
-\solve
+\analysis
 本题考查劈尖干涉，只要能正确理解公式的含义就可以顺利解出，难度不大。
-（图）
+
+\solve
+设劈尖的顶角为$\theta$，相邻暗纹距离为$a$，薄膜厚度为$d$，AB长度为$l$，则：
+\begin{gather*}
+	a\sin\theta=\dfrac{\lambda}{2n_1}\\
+	l=10a
+\end{gather*}
+联立得：
+\[
+d=l\sin\theta=\dfrac{5\lambda}{n_1}
+\]
+代入数据得：
+\[
+d=1.431\times 10^{-6}\mathrm{ m}
+\]
 
 \exercise 
 
-\solve
+\analysis
 本题考查劈尖干涉的光程差的分析，由于条纹整体左移，说明光程差变大了，即左边的空气隙的厚度变大了，说明工件表面有凹陷，且可以定量算出凹陷的深度。
-（图）
+
+\solve
+条纹向左移动说明左侧空气隙厚度变大，即左侧发生凹陷。
+
+设凹陷的深度为$\Delta d$，则：
+
+原来：$2nd_1+\frac{\lambda}{2}=(2k+1)\frac{\lambda}{2}$
+
+现在：$2n(d_1+\Delta d)+\frac{\lambda}{2}=[2(k+1)+1]\frac{\lambda}{2}$
+
+作差得：$\Delta d=\frac{\lambda}{2}$
 
 \exercise 
 
-\solve
+\analysis
 本题考查薄膜干涉的两种情况。如果观察反射光可以直接利用薄膜干涉的公式（公式十八），根据k的取值判断光的颜色。如果观察透射光，可以利用作业第七题，第九题提到的算法同样判断k的值得到光的颜色。
-（图）
+
+\solve
+(1) 正面观察
+\[
+\delta=2nd+\dfrac{\lambda}{2}=2k\cdot \dfrac{\lambda}{2}
+\]
+即
+\[
+\lambda=\dfrac{4nd}{2k-1}(k=1,2,3...)
+\]
+其中满足400nm$\leqslant\lambda\leqslant$760nm\footnote{尽管据报道，波长为390nm也是可见的，但考试用本题解所述范围也正确。}的解为668.8nm($k=2$)和401.28nm($k=3$)。查表知二者分别为红色、紫色。
+%有效数字？
+
+(2) 背面观察
+\[
+\delta=2nd=2k\cdot \frac{\lambda}{2}
+\]
+即
+\[
+\lambda=\dfrac{2nd}{k}(k=1,2,3...)
+\]
+其中满足400nm$\leqslant\lambda\leqslant$760nm的解为501.6nm($k=2$)。查表知其颜色为绿色。
 
 \exercise 
 
-\solve
+\analysis
 本题要求类比牛顿环的分析方法分析干涉现象，关键是要抓住光程差的分析，前两问非常基础。第三问关于疏密的判断可以类比第八题，即判断δr，由于δr是关于θ的单元函数，故可以由θ的变化判断出疏密的变化。
-（图）
+\solve
 
