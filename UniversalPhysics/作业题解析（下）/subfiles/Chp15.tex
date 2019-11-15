@@ -1,11 +1,12 @@
 \chapter{波动光学1（干涉）}
 \makeatletter
-\@addtoreset{equation}{exercises}
+\@addtoreset{equation}{exercise}
 \makeatother
+%\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
 \section{选择题}
 \exercise A
 
-\solve 相干长度（书上P129）：一切实际光源发射的光是一个个的波列，当两个分光束的光程差大于波列长度L时，将不能发生干涉现象。这个波列长度L成为该光源的相干长度。 
+\solve 相干长度（书上P129）：一切实际光源发射的光是一个个的波列，当两个分光束的光程差大于波列长度$L$时，将不能发生干涉现象。这个波列长度$L$成为该光源的相干长度。 
 
 \exercise C
 
@@ -25,19 +26,28 @@
 
 \exercise A
 
-\solve 本题考查介质中光程差的计算方法。由于加入玻璃片后，光在玻璃片中的光程差发生改变，增加了（n-1）d，即增加了5λ的光程差，故不影响原有的明纹暗纹分布，中央明纹处依旧是明纹。
+\solve 本题考查介质中光程差的计算方法。由于加入玻璃片后，光在玻璃片中的光程差发生改变，增加了$(n-1)d$，即增加了$5\lambda$的光程差，故不影响原有的明纹暗纹分布，中央明纹处依旧是明纹。
 
 \exercise D
 
-\solve 解析：由于要研究透射光的相干现象。做出光路图（光路图一），由图可知两束光的光程差为2nd,由相长干涉的条件（公式四）可知最小厚度即为λ/(2n)。
+\solve 做出光路图，由图\ref{fig:15_7}可知两束光的光程差为$\delta=2nd$，由相长干涉的条件$\delta=2k\cdot\frac{\lambda}{2}(k=1,2,3,...)$可知最小厚度即为$\frac{\lambda}{2n}$。
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.6\linewidth]{Chp15_7}
+	\caption{}\label{fig:15_7}
+\end{figure}
 
 \exercise B
 
-\solve 解析：研究光的干涉现象的关键是要分析清楚光程差的变化情况。设凸透镜离开平玻璃的距离为l，由牛顿环的中心光程差（公式五），可知现在中心点的光程差为（公式六），随着l的增加光程差也在增加，故中心点的光程差将依次满足明纹暗纹的条件，故中心点会出现明纹暗纹交替的现象。对于第k级暗纹，原来的rk为（公式七），现在为（公式八），可知（公式九），故条纹向中心收缩。
+\solve 研究光的干涉现象的关键是要分析清楚光程差的变化情况。
+
+设凸透镜离开平玻璃的距离为$l$，由牛顿环的中心光程差$\frac{\lambda}{2}$，可知现在中心点的光程差为$\frac{\lambda}{2}+2l$，随着$l$的增加光程差也在增加，故中心点的光程差将依次满足明纹、暗纹的条件，故中心点会出现明纹暗纹交替的现象。
+
+对于第$k$级暗纹，原来的$r_k$为$r_k=\sqrt{k\lambda R}$，现在为$r_k'=\sqrt{(k\lambda-2l)R}$，可知$r_k'<r_k$，故条纹向中心收缩。
 
 \exercise C
 
-\solve 注意审题，是从下向上观察，即观察透射光的干涉现象（类比第七题）。由于半波损失发生在光从光疏介质射向光密介质，在界面上发生反射时，由于玻璃的折射率为1.5，故两束光都没有半波损失，由出现暗纹的条件（公式十）可知最小距离为78.1nm。
+\solve 注意审题，是从下向上观察，即观察透射光的干涉现象（类比第七题）。由于半波损失发生在光从光疏介质射向光密介质，在界面上发生反射时，由于玻璃的折射率为1.5，故两束光都没有半波损失，由出现暗纹的条件$2nl=\frac{\lambda}{2}(2k+1)(k=0,1,2,...)$可知最小距离为78.1nm。
 
 \exercise B
 
@@ -45,11 +55,15 @@
 \section{填空题}
 \exercise $5\times10^{-7}\mathrm{m}$ 
 
-\solve 由于光的相位的该变量为3π，那么光程差即为1.5λ，由频率可以求出波长，就可以求出介质薄片的厚度，具体如图：（图一）
+\solve 由于光的相位的该变量为$3\pi$，那么光程差即为$1.5\lambda$，由频率可以求出波长，就可以求出介质薄片的厚度。
+\begin{gather*}
+	\delta=2nd=\dfrac{3}{2}\lambda=\dfrac{3}{2}\dfrac{c}{\nu}\\
+	d=\dfrac{3c}{4n\nu}=5\times 10^{-7}\mathrm{m}
+\end{gather*}
 
 \exercise 563.6
 
-\solve 本题考查迈克尔逊干涉仪中的条纹距离公式，即δd=Nλ/2,代入相关数据即可解得。
+\solve 本题考查迈克尔逊干涉仪中的条纹距离公式，即$\Delta d=\dfrac{Nλ}{2}$，代入相关数据即可解得。
 
 \exercise $3d$
 
@@ -59,29 +73,61 @@
 
 \solve 书上介绍了两种获得相干光源的办法：分波阵面法和分振幅法。前者是在光源发出的同一波列的波面上取出两个次波源作为相干波源，如杨氏干涉。后者是把同一波列的波分为两束光波，如薄膜干涉。
 
-\exercise 9λ/4n2
+\exercise $\dfrac{9\lambda}{4n_2}$
 
-\solve （2是n的下角标） 做出光路图如图所示，由于两束光均为从光疏介质射向光密介质并且在界面分界出发生反射，故两束光均存在半波损失，故光程差没有半波损失。由干涉出现暗纹的条件可知厚度。(光路图二)
+\solve 做出光路图如图\ref{fig:15_15}所示，由于两束光均为从光疏介质射向光密介质并且在界面分界出发生反射，故两束光均存在半波损失，故光程差没有半波损失。由干涉出现暗纹的条件
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.6\linewidth]{Chp15_15}
+	\caption{}\label{fig:15_15}
+\end{figure}
+\[
+2n_2d=(2k+1)\lambda(k=0,1,2,...)
+\]
+取$k=4$，则$d=\frac{9\lambda}{4n_2}$
 
 \exercise $(r1/r2)^2$
 
-\solve 分别写出r1和r2的表达式，则可知液体的折射率。（公式十一）
+\solve 分别写出$r_1$和$r_2$的表达式，则可知液体的折射率。
+\begin{gather}
+	2\cdot\dfrac{r_1^2}{2R}=(2k+1)\dfrac{\lambda}{2}\label{eqn:15_16_1}\\
+	2n\cdot\dfrac{r_2^2}{2R}=(2k+1)\dfrac{\lambda}{2}\label{eqn:15_16_2}
+\end{gather}
+(\ref{eqn:15_16_2})/(\ref{eqn:15_16_1})得：$n\cdot\frac{r_2^2}{r_1^2}=1\Rightarrow n=\frac{r_1^2}{r_2^2}$
 
-\exercise $4*10^-5$
 
-\solve 由劈尖干涉的公式（公式十二）可知sinθ的值，根据几何关系和小角度近似（公式十三）可知小纸条的厚度。
+\exercise $4\times10^{-5}\mathrm{m}$
+
+\solve 设$a$相邻两暗纹间的距离，$d$是小纸条厚度。
+由劈尖干涉的公式$a\sin\theta=\frac{\lambda}{2}$可知
+\[
+\sin\theta=\frac{\lambda}{2a}
+\]
+
+根据几何关系和小角度近似可知
+\begin{align*}
+d&=L\tan\theta\approx L\sin\theta=L\frac{\lambda}{2a}\\
+&=20\times 10^{-2}\mathrm{m}\times \dfrac{560\times 10^{-9}\mathrm{m}}{2\times 1.4\times 10^{-3}\mathrm{m}}=4\times 10^{-5}\mathrm{m}
+\end{align*}
 
 \exercise $xd/5D$
 
-\solve 直接由杨氏双缝干涉中相邻的明纹或者暗纹之间的距离公式（公式十四），且第零级明纹和第五级明纹之间的距离为五个δx，故可知（公式十五）
+\solve 直接由杨氏双缝干涉中相邻的明纹或者暗纹之间的距离公式$\delta x=\frac{D\lambda}{d}$，且第零级明纹和第五级明纹之间的距离为五个$\delta x$，可知$\lambda=xd/5D$.
+
+\exercise 暗纹
+
+\solve 对于一般位置分析，做出光路图\ref{fig:15_19}可知光程差的表达式为$2\cdot 1.75\cdot d+\frac{\lambda}{2}=8$，在中心处由于$d=0$，故中心处的光程差为$\frac{\lambda}{2}$，满足干涉出现暗纹的条件。
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.6\linewidth]{Chp15_19}
+	\caption{}\label{fig:15_19}
+\end{figure}
+
+注意，在接触点处仍要考虑折射率为1.75的介质。
 
 \exercise 
 
-\solve 对于一般位置分析，做出光路图（光路图三）可知光程差的表达式为（公式十六），在中心处由于d=0，故中心处的光程差为（公式十七），满足干涉出现暗纹的条件。
-
-\exercise 
-
-\solve 考查迈克尔逊干涉仪的相关概念。当M1撇和M2平行时，可观察到同心圆的条纹分布，这是等倾干涉。当M1撇和M2不平行时，由于空气隙的存在，会观察到类似于等厚干涉的等距直线条纹。
+\solve 考查迈克尔逊干涉仪的相关概念。当$M_1'$和$M_2$平行时，可观察到同心圆的条纹分布，这是等倾干涉。当$M_1'$和$M_1$不平行时，由于空气隙的存在，会观察到类似于等厚干涉的等距直线条纹。
 
 \section{解答题}
 \exercise 
@@ -95,6 +141,7 @@
 	a\sin\theta=\dfrac{\lambda}{2n_1}\\
 	l=10a
 \end{gather*}
+
 联立得：
 \[
 d=l\sin\theta=\dfrac{5\lambda}{n_1}
@@ -114,42 +161,63 @@ d=1.431\times 10^{-6}\mathrm{ m}
 
 设凹陷的深度为$\Delta d$，则：
 
-原来：$2nd_1+\frac{\lambda}{2}=(2k+1)\frac{\lambda}{2}$
+原来的亮纹：$2nd_1+\frac{\lambda}{2}=(2k+1)\frac{\lambda}{2}$
 
-现在：$2n(d_1+\Delta d)+\frac{\lambda}{2}=[2(k+1)+1]\frac{\lambda}{2}$
+现在的亮纹：$2n(d_1+\Delta d)+\frac{\lambda}{2}=[2(k+1)+1]\frac{\lambda}{2}$
 
 作差得：$\Delta d=\frac{\lambda}{2}$
 
 \exercise 
 
 \analysis
-本题考查薄膜干涉的两种情况。如果观察反射光可以直接利用薄膜干涉的公式（公式十八），根据k的取值判断光的颜色。如果观察透射光，可以利用作业第七题，第九题提到的算法同样判断k的值得到光的颜色。
+本题考查薄膜干涉的两种情况。如果观察反射光可以直接利用薄膜干涉的公式$\delta=2nd+\frac{\lambda}{2}$，根据$k$的取值判断光的颜色。如果观察透射光，可以利用作业第七题、第九题提到的算法同样判断$k$的值得到光的颜色。
 
 \solve
 (1) 正面观察
 \[
 \delta=2nd+\dfrac{\lambda}{2}=2k\cdot \dfrac{\lambda}{2}
 \]
+
 即
 \[
-\lambda=\dfrac{4nd}{2k-1}(k=1,2,3...)
+\lambda=\dfrac{4nd}{2k-1}(k=1,2,3,...)
 \]
-其中满足400nm$\leqslant\lambda\leqslant$760nm\footnote{尽管据报道，波长为390nm也是可见的，但考试用本题解所述范围也正确。}的解为668.8nm($k=2$)和401.28nm($k=3$)。查表知二者分别为红色、紫色。
+其中满足400nm$\leqslant\lambda\leqslant$760nm\footnote{尽管据报道，波长为390nm也是可见的，但考试一般会给出范围；即使未给出，用本题解所述范围也正确。}的解为668.8nm($k=2$)和401.3nm($k=3$)。查表知二者分别为红色、紫色。
 %有效数字？
 
 (2) 背面观察
 \[
 \delta=2nd=2k\cdot \frac{\lambda}{2}
 \]
+
 即
 \[
-\lambda=\dfrac{2nd}{k}(k=1,2,3...)
+\lambda=\dfrac{2nd}{k}(k=1,2,3,...)
 \]
 其中满足400nm$\leqslant\lambda\leqslant$760nm的解为501.6nm($k=2$)。查表知其颜色为绿色。
 
 \exercise 
 
 \analysis
-本题要求类比牛顿环的分析方法分析干涉现象，关键是要抓住光程差的分析，前两问非常基础。第三问关于疏密的判断可以类比第八题，即判断δr，由于δr是关于θ的单元函数，故可以由θ的变化判断出疏密的变化。
-\solve
+本题要求类比牛顿环的分析方法分析干涉现象，关键是要抓住光程差的分析，前两问非常基础。第三问关于疏密的判断可以类比第八题，即判断$\Delta r$，由于$\Delta r$是关于$\theta$的单元函数，故可以由$\theta$的变化判断出疏密的变化。
 
+\solve (1)
+\[
+\delta=2d+\dfrac{\lambda}{2}=2k\cdot \dfrac{\lambda}{2}(k=1,2,3...)
+\]
+设某点到中心距离为$d$，则$d=r\tan\theta$。故
+\begin{gather*}
+	r=\dfrac{(k-\frac{1}{2})\lambda}{2\tan\theta}\\
+	\Delta r=\dfrac{\lambda}{2\tan\theta}
+\end{gather*}
+故条纹为明暗相间的等距条纹。
+
+(2)
+\[
+d_{k+1}-d_k=\Delta r\tan\theta=\dfrac{\lambda}{2}
+\]
+
+(3)
+向左倾斜时，左侧与平面夹角减小，右侧增大。
+
+由$\Delta r=\dfrac{\lambda}{2\tan\theta}$，左侧$\Delta r$增大，条纹变稀疏；右侧$\Delta r$减小，条纹变密集。

@@ -58,6 +58,19 @@
 \newcommand{\note}{\noindent\textbf{注记}\ }
 \newcommand{\solve}{\noindent\textbf{解}\hspace{1em}}
 \newcommand{\analysis}{\noindent\textbf{分析}\ }
+% 这里可以自定义一些命令
+\newcommand{\di}[1]{\mathrm{d}#1}
+\newcommand{\p}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\pp}[2]{\frac{\partial ^2 #1}{\partial #2 ^2}}
+\newcommand{\dy}[2]{\frac{\di{#1}}{\di{#2}}}
+\newcommand{\ddy}[2]{\frac{\mathrm{d} ^2 #1}{\mathrm{d} #2 ^2}}
+\newcommand{\zbj}[4]
+{
+	\draw (0,0) node[below left] {$ O $};
+	\draw [->] (#1,0) -- (#2,0) node[right] {$ x $};
+	\draw [->] (0,#3) -- (0,#4) node[right] {$ y $};
+}
+
 \RequirePackage{geometry}
 \ifQYXF@smallersize
   \setlength{\paperwidth}{176mm}

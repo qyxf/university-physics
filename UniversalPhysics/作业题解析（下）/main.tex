@@ -1,20 +1,6 @@
 \documentclass[b5paper,opensource]{./template/qyxf-book}
 %注意，我修改了模板里的\solve，使其后文字首行缩进两字符
 
-% 这里可以自定义一些命令
-\newcommand{\di}[1]{\mathrm{d}#1}
-\newcommand{\p}[2]{\frac{\partial #1}{\partial #2}}
-\newcommand{\pp}[2]{\frac{\partial ^2 #1}{\partial #2 ^2}}
-\newcommand{\dy}[2]{\frac{\di{#1}}{\di{#2}}}
-\newcommand{\ddy}[2]{\frac{\mathrm{d} ^2 #1}{\mathrm{d} #2 ^2}}
-\newcommand{\zbj}[4]
-{
-	\draw (0,0) node[below left] {$ O $};
-	\draw [->] (#1,0) -- (#2,0) node[right] {$ x $};
-	\draw [->] (0,#3) -- (0,#4) node[right] {$ y $};
-}
-
-
 \usepackage{siunitx}%输入角度
 \usepackage{color}
 \renewcommand{\thefootnote}{\color{red}\arabic{footnote}}%更改脚注格式
@@ -23,10 +9,12 @@
 \newenvironment{mymathfrac}[2]{\left.\raise0.5ex\hbox{$#1$}\! \big\left/ \! \lower0.5ex\hbox{$#2$}\right.}%长斜分数线环境
 %公式按照题目标号，不知道为啥编译不了，只能手动添加到各章
 %\makeatletter
-%\@addtoreset{equation}{exercises}
+%\@addtoreset{equation}{exercise}
 %\makeatother
+%\renewcommand{\theequation}{(\arabic{section}.\arabic{equation})}
 
-
+\graphicspath{{pics/}}%图片全部保存在pics文件夹
+%还没有整理caption，调整图片大小，重新绘制某些图片，图片风格
 
 \begin{document}
 	
