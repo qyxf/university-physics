@@ -1,5 +1,11 @@
 \documentclass[b5paper,opensource]{./template/qyxf-book}
 %注意，我修改了模板里的\solve，使其后文字首行缩进两字符
+\usepackage{subcaption}
+\usepackage{draftwatermark}
+\usepackage{fontawesome5}
+\SetWatermarkText{钱院学辅}
+\SetWatermarkLightness{0.92}
+\SetWatermarkScale{0.9}
 
 \usepackage{siunitx}%输入角度
 \usepackage{color}
@@ -16,8 +22,19 @@
 \graphicspath{{pics/}}%图片全部保存在pics文件夹
 %还没有整理caption，调整图片大小，重新绘制某些图片，图片风格
 
+
+\title{大学物理题解（下）}
+\subtitle{Key to University Physics: Part \RNum{2}}
+\author{钱院学辅大物编写小组}
+\typo{钱院学辅排版组}
+\date{2019 年 12 月  日}
+\version{v1.0}
+\sourcepage{\url{https://github.com/qyxf/BookHub/}}
+
 \begin{document}
 	
+\input{./subfiles/preface_and_content.tex}
+
 \setcounter{chapter}{10}
 
 \input{./subfiles/Chp11.tex}
@@ -31,4 +48,8 @@
 \input{./subfiles/Chp15.tex}
 
 \input{./subfiles/Chp16.tex}
+
+\input{./subfiles/Chp17.tex}
+
+
 \end{document}

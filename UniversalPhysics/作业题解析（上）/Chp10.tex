@@ -1,0 +1,80 @@
+\documentclass[b5paper,opensource]{./template/qyxf-book}
+
+\usepackage{amsmath}
+\usepackage{subcaption}
+% 添加水印的宏包
+\usepackage{draftwatermark}
+\SetWatermarkText{钱院学辅}
+\SetWatermarkLightness{0.9}
+\SetWatermarkScale{0.9}
+
+% 基本不需要改动
+\title{大物题解}
+\subtitle{Key to Universal Physics}
+\author{钱院学辅大物编写小组}
+\typo{钱院学辅排版组}
+\date{\today}
+\version{v1.0}
+\sourcepage{\url{https://github.com/qyxf/Tutorials/}}
+
+% 这里可以自定义一些命令
+\newcommand{\di}[1]{\mathrm{d}#1}
+\newcommand{\p}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\pp}[2]{\frac{\partial ^2 #1}{\partial #2 ^2}}
+\newcommand{\dy}[2]{\frac{\di{#1}}{\di{#2}}}
+\newcommand{\ddy}[2]{\frac{\mathrm{d} ^2 #1}{\mathrm{d} #2 ^2}}
+\newcommand{\zbj}[4]
+{
+	\draw (0,0) node[below left] {$ O $};
+	\draw [->] (#1,0) -- (#2,0) node[right] {$ x $};
+	\draw [->] (0,#3) -- (0,#4) node[right] {$ y $};
+}
+
+
+\begin{document}
+\chapter{变化的电磁场}  % 使用章节\chapter{}来做一级标题
+
+\section{计算题}
+
+\exercise{21}
+
+\solve
+\begin{align*}
+&\varepsilon_{AB}=\int_A^B(\vec{v}\times\vec{B})\di l=\int_0^{\frac{2}{3}\pi}
+\frac{\mu_0IvR\sin\theta}{2\pi(2R-R\cos\theta)}\di\theta=\frac{\mu_0Iv}{2\pi}\ln\frac{5}{2}\\
+&\mbox{$A$端电势高.}
+\end{align*}
+
+\exercise{22}
+
+\solve 
+\begin{align*}
+&B=\frac{\mu_0I}{2\pi}(\frac{1}{x}-\frac{1}{x-d})\\
+&\Phi=\iint_S\vec{B}\cdot\di\vec{S}=\int_{2d}^{3d}B\cdot h\di x=\int_{2d}^{3d}\frac{\mu_0Ih}{2\pi}(\frac{1}{x}-\frac{1}{x-d})\di x=\frac{\mu_0Ih}{2\pi}\ln\frac{3}{4}\\
+&M=\frac{\Phi}{I}=\frac{\mu_0h}{2\pi}\frac{3}{4}\\
+&\varepsilon_M=-M\cdot\frac{\di I}{\di t}=\frac{\alpha\mu_0h}{2\pi}\ln\frac{3}{4}\cdot I_0e^{-\alpha t}\quad\mbox{方向为逆时针.}
+\end{align*}
+
+\exercise{23}
+
+\solve
+\begin{align*}
+&\Phi_m=Blx=\int_L^{2L}\frac{\mu_0I}{2\pi r}x\di r=\frac{\mu_0Ix}{2\pi}\ln2\\
+&\varepsilon=-\frac{\di\Phi_m}{\di t}=-\frac{\mu_0Uv}{2\pi}\ln2\\
+&I'=\frac{|\varepsilon|}{R}=\frac{\mu_0Iv}{2\pi R}\ln2\\
+&F=BI'L=\int_L^{2L}\frac{\mu_0I}{2\pi r}\cdot\frac{\mu_0Iv}{2\pi R}\ln2\cdot\di r=\frac{\mu_0^2I^2v}{4\pi^2R}\ln^2 2\quad\mbox{方向向右.}\\
+&\vec{M_1}=\int_L^{2L}I'\vec{B}\di l(l-L)\qquad\vec{M_2}=\vec{F}\times\vec{l}\\
+&\mbox{由力矩平衡}\vec{M_1}=\vec{M_2}\mbox\quad{得}l=\frac{1-\ln2}{\ln2}L.\\
+&\mbox{故作用点距}C\quad\frac{1-\ln2}{\ln2}L.
+\end{align*}
+
+\exercise{24}
+
+\solve
+\begin{align*}
+&\Phi_m=\frac{1}{2}Blx=\frac{1}{2}B_0\cos\omega tx^2\tan\theta=\frac{1}{2}B_0\cos\omega t\cdot v^2t^2\\
+&\varepsilon=-\frac{\di\Phi_m}{\di t}=\frac{1}{2}B_0v^2t\tan\theta(\omega t\sin\omega t-2\cos\omega t)\\
+&\mbox{方向逆时针（由$N$指向$M$）.}
+\end{align*}
+
+\end{document}

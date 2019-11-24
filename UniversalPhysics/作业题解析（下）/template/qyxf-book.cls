@@ -198,6 +198,7 @@ left=20pt]
 {\setlength\parskip{0pt}\@starttoc{toc}}
 \cleardoublepage
 \pagestyle{fancy}
+\setlength{\parindent}{0pt}
 \setcounter{page}{1}
 }
 \endinput
