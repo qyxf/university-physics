@@ -58,6 +58,11 @@
 \newcommand{\note}{\noindent\textbf{注记}\ }
 \newcommand{\solve}{\noindent\textbf{解}\hspace{1em}}
 \newcommand{\analysis}{\noindent\textbf{分析}\ }
+%公式按照题目标号，不知道为啥编译不了，只能手动添加到各章
+%\makeatletter
+%\@addtoreset{equation}{exercise}
+%\makeatother
+\renewcommand{\theequation}{(\arabic{chapter}.\arabic{equation})}
 % 这里可以自定义一些命令
 \newcommand{\di}[1]{\mathrm{d}#1}
 \newcommand{\p}[2]{\frac{\partial #1}{\partial #2}}
@@ -193,12 +198,15 @@ left=20pt]
 \centerline{%
 \normalfont\LARGE\bfseries\contentsname%
 \@mkboth{\MakeUppercase\contentsname}{\MakeUppercase\contentsname}
+\small\normalfont 注：点击页码跳转
 }
+\normalsize
 \vskip 3ex%
 {\setlength\parskip{0pt}\@starttoc{toc}}
 \cleardoublepage
 \pagestyle{fancy}
-\setlength{\parindent}{0pt}
+%\RequirePackage{indentfirst}
+\setlength{\parindent}{2em}
 \setcounter{page}{1}
 }
 \endinput

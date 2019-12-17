@@ -13,15 +13,9 @@
 \usepackage[version=4]{mhchem}%写化学式
 \newcommand{\RNum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}%罗马数字
 \newenvironment{mymathfrac}[2]{\left.\raise0.5ex\hbox{$#1$}\! \big\left/ \! \lower0.5ex\hbox{$#2$}\right.}%长斜分数线环境
-%公式按照题目标号，不知道为啥编译不了，只能手动添加到各章
-%\makeatletter
-%\@addtoreset{equation}{exercise}
-%\makeatother
-%\renewcommand{\theequation}{(\arabic{section}.\arabic{equation})}
+%tikz的箭头样式
 
 \graphicspath{{pics/}}%图片全部保存在pics文件夹
-
-
 
 \title{大学物理题解（下）}
 \subtitle{Key to University Physics: Part \RNum{2}}
@@ -32,7 +26,7 @@
 \sourcepage{\url{https://github.com/qyxf/BookHub/}}
 
 \begin{document}
-	
+
 \input{./subfiles/preface_and_content.tex}
 
 \setcounter{chapter}{10}

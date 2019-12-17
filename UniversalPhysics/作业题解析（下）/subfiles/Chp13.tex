@@ -147,14 +147,11 @@
 \exercise
 
 \solve
-以向右为正方向，设A的加速度为$a$，相对弹簧自由状态的位置为$x$。首先对A水平受力分析，A受到弹簧的力$F_1=-kx$，以及AB间绳的拉力$F_2$。为求出$F_2$，再对滑轮受力分析。滑轮转动惯量$J=\frac{mR^2}{2}$，角加速度$\beta=a/R$，右端拉力为$m_2g$，因此左端拉力$F_2=m_2g-\frac{J\beta}{R}=m_2（g-a）-0.5ma$
-故A的合力$F=F1+F2=-kx+m_2(g-a)-0.5ma$，于是可以推导出a的加速度方程：
-\begin{equation*}
-\begin{split}
-a=\frac{-kx-0.5ma+m_2(g-a)}{m_1}\\
-a=\frac{-kx-0.5ma+m_2g}{m_1+m_2}\\
+以向右为正方向，设A的加速度为$a$，相对弹簧自由状态的位置为$x$。首先对A水平受力分析，A受到弹簧的力$F_1=-kx$，以及AB间绳的拉力$F_2$。为求出$F_2$，再对滑轮受力分析。滑轮转动惯量$J=\frac{mR^2}{2}$，角加速度$\beta=a/R$，右端拉力为$m_2(g-a)$，因此左端拉力$F_2=m_2g-\frac{J\beta}{R}=m_2(g-a)-0.5ma$，
+故A的合力$F=F_1+F_2=-kx+m_2(g-a)-0.5ma$，于是可以推导出A的动力学方程：
+\begin{gather*}
+m_1a=-kx-0.5ma+m_2(g-a)\\
 (1+\frac{m}{2m_1+2m_2})a=-\frac{k}{m_1+m_2}x+\frac{m_2}{m_1+m_2}g\\
 a=-\frac{2k}{2m_1+2m_2+m}(x+x_0)
-\end{split}
-\end{equation*}
+\end{gather*}
 其中，$x_0=\frac{2m_2g}{2k}$。于是，角频率$\omega=\sqrt{\frac{a}{-x}}=\sqrt{\frac{2k}{2m_1+2m_2+m}}$
