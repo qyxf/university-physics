@@ -176,6 +176,17 @@ left=20pt]
 \ding{228} \textbf{出品时间：}\@date\\
 \ding{228} \textbf{总页数：}\pageref{LastPage}
 \end{tcolorbox}
+\begin{tcolorbox}[title={\bfseries 编写组成员}]
+	\ding{228} \textbf{第十一次：}越杰81 苏预达\\
+	\ding{228} \textbf{第十二次：}越杰81 郭秉瑞\\
+	\ding{228} \textbf{第十三次：}电气钱82 蒋施达\\
+	\ding{228} \textbf{第十四次：}电气钱81 赵恒欣\\
+	\ding{228} \textbf{第十五次：}电气钱82 李明轩\\
+	\ding{228} \textbf{第十六次：}微电子钱81 彭帅\\
+	\ding{228} \textbf{第十七次：}电气钱81 赵恒欣\\
+	\ding{228} \textbf{第十八次：}越杰81 周明烁\\
+	\ding{228} \textbf{总负责人：}化生81 高旭帆
+\end{tcolorbox}
 \begin{tcolorbox}[title={\bfseries 许可证说明}]
 \centerline{\tcbox{\ccbyncnd\ \fangsong 知识共享 (Creative Commons) BY-NC-ND 4.0 协议}%
 \\[0.3\baselineskip]}
@@ -196,9 +207,9 @@ left=20pt]
 \renewcommand\tableofcontents{%
 \pagestyle{empty}
 \centerline{%
-\normalfont\LARGE\bfseries\contentsname%
+\normalfont\Huge\bfseries\contentsname%
 \@mkboth{\MakeUppercase\contentsname}{\MakeUppercase\contentsname}
-\small\normalfont 注：点击页码跳转
+\small\normalfont 注：电子版点击页码跳转
 }
 \normalsize
 \vskip 3ex%
