@@ -143,21 +143,23 @@ $\therefore \cos{\frac{2\pi x}{a}}=-1$时，概率最大
 	
 \exercise
 
-\solve 设自由电子静$m_0$，它与光子碰撞后吸收光子，然后以速度$v_2$运动，电子碰前速度为$v_1$,碰前电子和光子的夹角为$\theta_1$，碰后为$\theta_2$，如图\ref{Chp18_24}所示：
+\solve 设自由电子静止质量$m_0$，它与光子碰撞后吸收光子，然后以速度$v_1$运动，电子碰前速度为0,，如图\ref{24}
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=0.6\textwidth]{Chp18_24.jpg}
-	\caption{题24\ 示意图}
-	\label{Chp18_24}
+	\includegraphics[width=0.6 \textwidth]{Chp18_24.jpg}
+	\caption{题24图}
+	\label{24}
 \end{figure}
-由动量守恒
-\[ x:\frac{h\nu}{c}+m_1v_1\cos\theta_1=\frac{m_0v_2}{\sqrt{1-{\left(\frac{v_2}{c}\right)}^2}}\cos\theta_2 \]
-\[ y:m_1v_1\sin\theta_1=\frac{m_0v_2}{\sqrt{1-{\left(\frac{v_2}{c}\right)}^2}}\sin\theta_2 \]
+
+动量守恒
+\[ \frac{h\nu}{c}=\frac{m_0v_1}{\sqrt{1-\left(\frac{v_1}{c}\right)^2}} \]
 解得
-\[ v_2=c\sqrt{\frac{h^2\nu^2+m_1^2v_1^2c^2+2h\nu m_1v_1\cos\theta_1}{m_0^2c^4+h^2\nu^2+m_1^2v_1^2c^2+2h\nu m_1v_1\cos\theta_1}} \]
+\[ v_1=\sqrt{\frac{h^2\nu^2c^2}{m_0^2c^4+h^2\nu^2}} \]
+
 若能量全部转移，由能量守恒
-\[ h\nu+m_1c^2=\frac{m_0}{\sqrt{1-{\left(\frac{v_2'}{c}\right)}^2}}\cdot c^2 \]
+\[ h\nu+m_0c^2=\frac{m_0}{\sqrt{1-\left(\frac{v_1'}{c}\right)^2}}\cdot c^2 \]
 解得
-\[v_2'=\frac{c\sqrt{h^2\nu^2+(m_1^2-m_0^2)c^4+2h\nu m_1c^2}}{h\nu+m_1c^2}  \]
-由于$v_2\neq v_2'$，说明光子不可能把能量全部转移给电子。
+\[v_1'=\sqrt{\frac{h^2\nu^2c^2+2h\nu m_0c^4}{{h^2\nu^2+m_0^2c^4+2h\nu m_0c^2}}}  \]
+对比$v_1,v_1'$，$v_1'$分子分母分别多了一项 $2h\nu m_0c^4$以及$2h\nu m_0c^2$\\同时$\frac{2h\nu m_0c^2}{2h\nu m_0c^4}=\frac{1}{c^2},\frac{h^2\nu^2+m_0^2c^4}{h^2\nu^2c^2}=\frac{1}{c^2}+\frac{m_0^2c^2}{h^2\nu^2}$\\
+由于$\frac{m_0^2c^2}{h^2\nu^2}>0$即$\frac{2h\nu m_0c^2}{2h\nu m_0c^4}\neq\frac{h^2\nu^2+m_0^2c^4}{h^2\nu^2c^2}$，故$v_1\neq v_1'$,说明光子不可能把能量全部转移给电子

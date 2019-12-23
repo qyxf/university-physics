@@ -146,7 +146,7 @@
 \begin{tcolorbox}[blanker,borderline west={1mm}{0pt}{black!80},%
 left=20pt]
 {\fontsize{40pt}{\baselineskip}\selectfont\bfseries\@title}\\[\baselineskip]
-{\Huge\itshape\the\subtitle}
+{\huge\itshape\the\subtitle}
 \end{tcolorbox}
 \begin{tcolorbox}[blanker,borderline west={1mm}{0pt}{black!50},%
 left=20pt]
@@ -185,6 +185,7 @@ left=20pt]
 	\ding{228} \textbf{第十六次：}微电子钱81 彭帅\\
 	\ding{228} \textbf{第十七次：}电气钱81 赵恒欣\\
 	\ding{228} \textbf{第十八次：}越杰81 周明烁\\
+	\ding{228} \textbf{排版：}电气钱81 白玉琛，化生81 高旭帆\\
 	\ding{228} \textbf{总负责人：}化生81 高旭帆
 \end{tcolorbox}
 \begin{tcolorbox}[title={\bfseries 许可证说明}]
