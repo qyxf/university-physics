@@ -1,0 +1,27 @@
+\contentsline {chapter}{\numberline {第一章\hspace {.3em}}模板功能介绍}{1}{chapter.1}%
+\contentsline {section}{\numberline {\S 1.1}模板概况}{1}{section.1.1}%
+\contentsline {section}{\numberline {\S 1.2}版本演进}{1}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}V1 版本}{2}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}V2 版本}{2}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}V3 版本}{2}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}我该用哪一个版本？}{3}{subsection.1.2.4}%
+\contentsline {section}{\numberline {\S 1.3}常用功能指南}{3}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}命令与环境}{3}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}配色方案定制}{4}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}元信息定制}{4}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.4}封面定制}{6}{subsection.1.3.4}%
+\contentsline {section}{\numberline {\S 1.4}正文字体设置}{7}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}字体设置方案的考虑}{7}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}西文字体设置}{7}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}中文字体设置}{8}{subsection.1.4.3}%
+\contentsline {section}{\numberline {\S 1.5}问题及改进}{9}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}已知问题}{9}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}帮帮我们！}{9}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {1.5.3}可解决的问题}{10}{subsection.1.5.3}%
+\contentsline {chapter}{\numberline {第二章\hspace {.3em}}内容示例}{11}{chapter.2}%
+\contentsline {section}{\numberline {\S 2.1}用户环境示例}{11}{section.2.1}%
+\contentsline {section}{\numberline {\S 2.2}列表样式}{11}{section.2.2}%
+\contentsline {section}{\numberline {\S 2.3}正文示例}{11}{section.2.3}%
+\contentsline {section}{\numberline {\S 2.4}引导命令示例}{12}{section.2.4}%
+\contentsline {chapter}{参考文献}{13}{equation.2.4.2}%
+\contentsfinish 
